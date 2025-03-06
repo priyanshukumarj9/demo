@@ -15,9 +15,9 @@
             "ssm:PutParameter",
             "ssm:GetParameter",
             "kms:Decrypt",
+            "sqs:GetQueueAttributes",
             "sqs:ReceiveMessage",
-            "sqs:DeleteMessage",
-            "sqs:GetQueueAttributes"
+            "sqs:DeleteMessage"
           ],
           "Effect": "Allow",
           "Resource": "*"
@@ -45,6 +45,24 @@
     "resource_type": "sns_topic",
     "region": "eu-central-1",
     "event_sources": [],
+    "tags": {}
+  },
+  "sqs_handler-role": {
+    "predefined_policies": [],
+    "principal_service": "lambda",
+    "custom_policies": [
+      "lambda-basic-execution"
+    ],
+    "resource_type": "iam_role",
+    "tags": {}
+  },
+  "sns_handler-role": {
+    "predefined_policies": [],
+    "principal_service": "lambda",
+    "custom_policies": [
+      "lambda-basic-execution"
+    ],
+    "resource_type": "iam_role",
     "tags": {}
   }
 }
