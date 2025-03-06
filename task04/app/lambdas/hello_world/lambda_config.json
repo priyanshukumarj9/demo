@@ -9,11 +9,20 @@
   "timeout": 100,
   "lambda_path": "lambdas\\hello_world",
   "dependencies": [],
-  "event_sources": [],
+  "event_sources": [ {
+    "resource_type": "sqs_trigger",
+    "target_queue": "async_queue",
+    "batch_size": 10
+  },
+    {
+      "resource_type": "sns_topic_trigger",
+      "target_topic": "lambda_topic",
+      "region": "${region}"
+    }],
   "env_variables": {},
   "publish_version": true,
   "alias": "${lambdas_alias_name}",
-  "url_config": {},
+  "url_config": {"auth_type" :  "NONE"},
   "ephemeral_storage": 512,
   "tags": {}
 }
