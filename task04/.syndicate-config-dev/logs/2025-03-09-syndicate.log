@@ -30,3 +30,48 @@ Traceback (most recent call last):
     raise AssertionError(
         'sdct.conf does not exist inside %s folder' % dir_path)
 AssertionError: sdct.conf does not exist inside C:\Users\priyanshukumar_jha\Desktop\demo\task04\.syndicate-config-dev folder
+2025-03-09 14:26:07,079 [INFO] USER:priyanshukumar_jha s3_resource.py:40:validate_bucket_name LOG: Starting validating bucket name 'syndicate-education-platform-custom-sandbox-artifacts-sbox01'
+2025-03-09 14:26:07,079 [INFO] USER:priyanshukumar_jha s3_resource.py:73:validate_bucket_name LOG: Finished validating bucket name 'syndicate-education-platform-custom-sandbox-artifacts-sbox01'
+2025-03-09 14:26:07,079 [INFO] USER:priyanshukumar_jha helper.py:525:convert LOG: Stripping run_id:JAP-08,run_type:stm,type:user,user_id:fd0eaec1 from "," a bit..
+2025-03-09 14:26:07,079 [INFO] USER:priyanshukumar_jha helper.py:529:convert LOG: Converting: run_id:JAP-08,run_type:stm,type:user,user_id:fd0eaec1 to dict..
+2025-03-09 14:26:07,079 [INFO] USER:priyanshukumar_jha helper.py:541:convert LOG: Converted to such a dict: {'run_id': 'JAP-08', 'run_type': 'stm', 'type': 'user', 'user_id': 'fd0eaec1'}
+2025-03-09 14:26:08,459 [WARNING] USER:priyanshukumar_jha generator.py:76:generate_configuration_files LOG: The config_path property is not specified. The working directory is used
+2025-03-09 14:26:08,459 [ERROR] USER:priyanshukumar_jha __init__.py:44:_mkdir LOG: [WinError 183] Cannot create a file when that file already exists: 'C:\\Users\\priyanshukumar_jha\\Desktop\\demo\\task06\\.syndicate-config-dev'
+2025-03-09 14:26:08,459 [WARNING] USER:priyanshukumar_jha generator.py:93:generate_configuration_files LOG: The "project_path" property is not specified. The working directory will be used as a project path. To change the path, edit the syndicate.yml by path C:\Users\priyanshukumar_jha\Desktop\demo\task06\.syndicate-config-dev
+2025-03-09 14:26:08,463 [INFO] USER:priyanshukumar_jha generator.py:155:generate_configuration_files LOG: Syndicate initialization has been completed. 
+Set SDCT_CONF:
+Unix: export SDCT_CONF="C:\Users\priyanshukumar_jha\Desktop\demo\task06\.syndicate-config-dev"
+Windows: setx SDCT_CONF C:\Users\priyanshukumar_jha\Desktop\demo\task06\.syndicate-config-dev
+2025-03-09 14:26:08,464 [INFO] USER:priyanshukumar_jha helper.py:330:timed LOG: Stage config, elapsed time: 0:00:01.384953
+2025-03-09 14:26:22,333 [INFO] USER:priyanshukumar_jha handlers.py:106:syndicate LOG: Configuration used: C:\Users\priyanshukumar_jha\Desktop\demo\task04\.syndicate-config-dev
+2025-03-09 14:26:22,334 [ERROR] USER:priyanshukumar_jha decorators.py:136:wrapper LOG: sdct.conf does not exist inside C:\Users\priyanshukumar_jha\Desktop\demo\task04\.syndicate-config-dev folder
+2025-03-09 14:26:22,337 [ERROR] USER:priyanshukumar_jha decorators.py:137:wrapper LOG: Traceback (most recent call last):
+  File "C:\Users\priyanshukumar_jha\AppData\Local\Programs\Python\Python313\Lib\site-packages\syndicate\core\decorators.py", line 134, in wrapper
+    return_code = func(*args, **kwargs)
+  File "C:\Users\priyanshukumar_jha\AppData\Local\Programs\Python\Python313\Lib\site-packages\syndicate\core\handlers.py", line 107, in syndicate
+    initialize_connection()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\priyanshukumar_jha\AppData\Local\Programs\Python\Python313\Lib\site-packages\syndicate\core\__init__.py", line 106, in initialize_connection
+    CONFIG = ConfigHolder(CONF_PATH)
+  File "C:\Users\priyanshukumar_jha\AppData\Local\Programs\Python\Python313\Lib\site-packages\syndicate\core\conf\processor.py", line 63, in __init__
+    self._init_conf_config(dir_path=dir_path)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priyanshukumar_jha\AppData\Local\Programs\Python\Python313\Lib\site-packages\syndicate\core\conf\processor.py", line 92, in _init_conf_config
+    raise AssertionError(
+        'sdct.conf does not exist inside %s folder' % dir_path)
+AssertionError: sdct.conf does not exist inside C:\Users\priyanshukumar_jha\Desktop\demo\task04\.syndicate-config-dev folder
+Traceback (most recent call last):
+  File "C:\Users\priyanshukumar_jha\AppData\Local\Programs\Python\Python313\Lib\site-packages\syndicate\core\decorators.py", line 134, in wrapper
+    return_code = func(*args, **kwargs)
+  File "C:\Users\priyanshukumar_jha\AppData\Local\Programs\Python\Python313\Lib\site-packages\syndicate\core\handlers.py", line 107, in syndicate
+    initialize_connection()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\priyanshukumar_jha\AppData\Local\Programs\Python\Python313\Lib\site-packages\syndicate\core\__init__.py", line 106, in initialize_connection
+    CONFIG = ConfigHolder(CONF_PATH)
+  File "C:\Users\priyanshukumar_jha\AppData\Local\Programs\Python\Python313\Lib\site-packages\syndicate\core\conf\processor.py", line 63, in __init__
+    self._init_conf_config(dir_path=dir_path)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\priyanshukumar_jha\AppData\Local\Programs\Python\Python313\Lib\site-packages\syndicate\core\conf\processor.py", line 92, in _init_conf_config
+    raise AssertionError(
+        'sdct.conf does not exist inside %s folder' % dir_path)
+AssertionError: sdct.conf does not exist inside C:\Users\priyanshukumar_jha\Desktop\demo\task04\.syndicate-config-dev folder
