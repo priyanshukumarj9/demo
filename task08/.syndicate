@@ -2,99 +2,6 @@ name: task08
 events:
 - operation: deploy
   initiator: priyanshukumar_jha
-  bundle_name: task08_250309.154313
-  deploy_name: task08
-  time_start: '2025-03-09T15:43:40Z'
-  time_end: '2025-03-09T15:44:09Z'
-  duration_sec: 29.508
-  status: failed
-  rollback_on_error: false
-- operation: build
-  initiator: priyanshukumar_jha
-  bundle_name: task08_250309.154313
-  time_start: '2025-03-09T15:43:13Z'
-  time_end: '2025-03-09T15:43:18Z'
-  duration_sec: 5.006
-  status: succeeded
-- operation: upload
-  initiator: priyanshukumar_jha
-  bundle_name: task08_250309.154313
-  time_start: '2025-03-09T15:43:16Z'
-  time_end: '2025-03-09T15:43:18Z'
-  duration_sec: 2.214
-  status: succeeded
-- operation: package_meta
-  initiator: priyanshukumar_jha
-  bundle_name: task08_250309.154313
-  time_start: '2025-03-09T15:43:16Z'
-  time_end: '2025-03-09T15:43:16Z'
-  duration_sec: 0.1
-  status: succeeded
-- operation: assemble
-  initiator: priyanshukumar_jha
-  bundle_name: task08_250309.154313
-  time_start: '2025-03-09T15:43:16Z'
-  time_end: '2025-03-09T15:43:16Z'
-  duration_sec: 0.019
-  status: succeeded
-- operation: assemble_appsync
-  initiator: priyanshukumar_jha
-  bundle_name: task08_250309.154313
-  time_start: '2025-03-09T15:43:16Z'
-  time_end: '2025-03-09T15:43:16Z'
-  duration_sec: 0.01
-  status: succeeded
-- operation: test
-  initiator: priyanshukumar_jha
-  time_start: '2025-03-09T15:43:16Z'
-  time_end: '2025-03-09T15:43:16Z'
-  duration_sec: 0.001
-  status: succeeded
-- operation: deploy
-  initiator: priyanshukumar_jha
-  bundle_name: task08_250309.153605
-  deploy_name: task08
-  time_start: '2025-03-09T15:36:28Z'
-  time_end: '2025-03-09T15:36:40Z'
-  duration_sec: 11.983
-  status: failed
-  rollback_on_error: false
-- operation: build
-  initiator: priyanshukumar_jha
-  bundle_name: task08_250309.153605
-  time_start: '2025-03-09T15:36:05Z'
-  time_end: '2025-03-09T15:36:07Z'
-  duration_sec: 2.604
-  status: succeeded
-- operation: upload
-  initiator: priyanshukumar_jha
-  bundle_name: task08_250309.153605
-  time_start: '2025-03-09T15:36:06Z'
-  time_end: '2025-03-09T15:36:07Z'
-  duration_sec: 0.981
-  status: succeeded
-- operation: package_meta
-  initiator: priyanshukumar_jha
-  bundle_name: task08_250309.153605
-  time_start: '2025-03-09T15:36:06Z'
-  time_end: '2025-03-09T15:36:06Z'
-  duration_sec: 0.084
-  status: succeeded
-- operation: assemble
-  initiator: priyanshukumar_jha
-  bundle_name: task08_250309.153605
-  time_start: '2025-03-09T15:36:06Z'
-  time_end: '2025-03-09T15:36:06Z'
-  duration_sec: 0.002
-  status: succeeded
-- operation: test
-  initiator: priyanshukumar_jha
-  time_start: '2025-03-09T15:36:06Z'
-  time_end: '2025-03-09T15:36:06Z'
-  duration_sec: 0.001
-  status: succeeded
-- operation: deploy
-  initiator: priyanshukumar_jha
   bundle_name: task08_250309.152145
   deploy_name: task08
   time_start: '2025-03-09T15:22:00Z'
@@ -138,16 +45,14 @@ events:
   status: succeeded
 locks:
   modification_lock:
-    last_modification_date: '2025-03-09T10:14:09Z'
+    last_modification_date: '2025-03-09T09:52:28Z'
     is_locked: false
     initiator: priyanshukumar_jha
 latest_deploy:
   initiator: priyanshukumar_jha
-  bundle_name: task08_250309.154313
+  bundle_name: task08_250309.152145
   deploy_name: task08
-  time_start: '2025-03-09T15:43:40Z'
-  time_end: '2025-03-09T15:44:09Z'
-  duration_sec: 29.508
+  time_start: '2025-03-09T15:22:00Z'
+  time_end: '2025-03-09T15:22:28Z'
+  duration_sec: 27.384
   is_succeeded: false
-build_projects_mapping:
-  appsync: appsync_src
