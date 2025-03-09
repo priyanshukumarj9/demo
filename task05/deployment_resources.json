@@ -9,6 +9,11 @@
             "logs:PutLogEvents",
             "dynamodb:GetItem",
             "dynamodb:Query",
+            "dynamodb:GetItem",
+            "dynamodb:Query",
+            "dynamodb:PutItem",
+            "dynamodb:Batch*",
+            "dynamodb:DeleteItem",
             "dynamodb:PutItem",
             "dynamodb:Batch*",
             "dynamodb:DeleteItem",
@@ -56,6 +61,16 @@
         }
       }
     },
+    "tags": {}
+  },
+  "Events": {
+    "resource_type": "dynamodb_table",
+    "hash_key_name": "id",
+    "hash_key_type": "S",
+    "read_capacity": 1,
+    "write_capacity": 1,
+    "global_indexes": [],
+    "autoscaling": [],
     "tags": {}
   }
 }
