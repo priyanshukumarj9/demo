@@ -6,7 +6,7 @@ const https = require('https');
 const getCurrentWeather = async () => {
     return new Promise((resolve, reject) => {
         // Open-Meteo API endpoint
-        const url = 'https://api.open-meteo.com/v1/forecast?latitude=50.4375&longitude=30.5&hourly=temperature_2m';
+        const url = 'https://api.open-meteo.com/v1/forecast?latitude=50.4375&longitude=30.5&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m';
 
         https.get(url, (response) => {
             let data = '';
@@ -19,18 +19,18 @@ const getCurrentWeather = async () => {
             response.on('end', () => {
                 try {
                     const result = JSON.parse(data);
-                    resolve(result);
+                    resolve(result); // Return full Open-Meteo API response
                 } catch (err) {
-                    reject(err);
+                    reject(err); // Handle error in response parsing
                 }
             });
         }).on('error', (err) => {
-            reject(err);
+            reject(err); // Handle HTTP errors
         });
     });
 };
 
-// Export function for use in the main Lambda
+// Export function for use in main Lambda
 module.exports = {
     getCurrentWeather,
 };

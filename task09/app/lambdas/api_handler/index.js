@@ -9,22 +9,25 @@
 
 const weatherSDK = require('/opt/weather-sdk'); // Import SDK from Lambda Layer
 
-/**
- * Lambda function handler for weather API requests
- */
 exports.handler = async (event) => {
-    // Extract path and method from the request
     const path = event.rawPath || '/';
     const method = event.requestContext.http.method || 'GET';
 
-    // Check if the request is targeting the `/weather` endpoint with GET method
     if (path === '/weather' && method === 'GET') {
         try {
-            // Use weatherSDK to fetch data from Open-Meteo API
             const forecast = await weatherSDK.getCurrentWeather();
+            // Ensure `hourly` data is included in the response
             return {
                 statusCode: 200,
-                body: JSON.stringify(forecast),
+                body: JSON.stringify({
+                    latitude: forecast.latitude,
+                    longitude: forecast.longitude,
+                    generationtime_ms: forecast.generationtime_ms,
+                    timezone: forecast.timezone,
+                    elevation: forecast.elevation,
+                    hourly_units: forecast.hourly_units,
+                    hourly: forecast.hourly, // Include hourly data
+                }),
                 headers: {
                     'content-type': 'application/json',
                 },
@@ -45,7 +48,6 @@ exports.handler = async (event) => {
         }
     }
 
-    // Return 400 Bad Request for unsupported paths or methods
     return {
         statusCode: 400,
         body: JSON.stringify({
