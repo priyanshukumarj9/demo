@@ -1,0 +1,631 @@
+2025-03-08 19:30:06,264 [INFO] USER:ayushi_sarkar s3_resource.py:40:validate_bucket_name LOG: Starting validating bucket name 'syndicate-education-platform-custom-sandbox-artifacts-sbox01'
+2025-03-08 19:30:06,265 [INFO] USER:ayushi_sarkar s3_resource.py:73:validate_bucket_name LOG: Finished validating bucket name 'syndicate-education-platform-custom-sandbox-artifacts-sbox01'
+2025-03-08 19:30:06,265 [INFO] USER:ayushi_sarkar helper.py:525:convert LOG: Stripping run_id:JAP-08,run_type:stm,type:user,user_id:78532faa from "," a bit..
+2025-03-08 19:30:06,265 [INFO] USER:ayushi_sarkar helper.py:529:convert LOG: Converting: run_id:JAP-08,run_type:stm,type:user,user_id:78532faa to dict..
+2025-03-08 19:30:06,282 [INFO] USER:ayushi_sarkar helper.py:541:convert LOG: Converted to such a dict: {'run_id': 'JAP-08', 'run_type': 'stm', 'type': 'user', 'user_id': '78532faa'}
+2025-03-08 19:30:08,512 [WARNING] USER:ayushi_sarkar generator.py:76:generate_configuration_files LOG: The config_path property is not specified. The working directory is used
+2025-03-08 19:30:08,513 [ERROR] USER:ayushi_sarkar __init__.py:44:_mkdir LOG: [WinError 183] Cannot create a file when that file already exists: 'C:\\EPAM_16\\AWS\\aws_syndicate\\task07\\.syndicate-config-dev'
+2025-03-08 19:30:08,513 [WARNING] USER:ayushi_sarkar generator.py:93:generate_configuration_files LOG: The "project_path" property is not specified. The working directory will be used as a project path. To change the path, edit the syndicate.yml by path C:\EPAM_16\AWS\aws_syndicate\task07\.syndicate-config-dev
+2025-03-08 19:30:08,536 [INFO] USER:ayushi_sarkar generator.py:155:generate_configuration_files LOG: Syndicate initialization has been completed. 
+Set SDCT_CONF:
+Unix: export SDCT_CONF="C:\EPAM_16\AWS\aws_syndicate\task07\.syndicate-config-dev"
+Windows: setx SDCT_CONF C:\EPAM_16\AWS\aws_syndicate\task07\.syndicate-config-dev
+2025-03-08 19:30:08,538 [INFO] USER:ayushi_sarkar helper.py:330:timed LOG: Stage config, elapsed time: 0:00:02.255514
+2025-03-08 19:30:22,750 [INFO] USER:ayushi_sarkar handlers.py:106:syndicate LOG: Configuration used: C:\EPAM_16\AWS\aws_syndicate\task07\.syndicate-config-dev
+2025-03-08 19:30:22,990 [INFO] USER:ayushi_sarkar processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-08 19:30:24,606 [INFO] USER:ayushi_sarkar project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-08 19:30:24,607 [INFO] USER:ayushi_sarkar project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-08 19:30:25,190 [INFO] USER:ayushi_sarkar sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-08 19:30:26,728 [INFO] USER:ayushi_sarkar handlers.py:142:test LOG: Running tests...
+2025-03-08 19:30:26,729 [INFO] USER:ayushi_sarkar handlers.py:150:test LOG: Tests not found, 'tests' folder is missing in 'C:/EPAM_16/AWS/aws_syndicate/task07'.
+2025-03-08 19:30:26,729 [INFO] USER:ayushi_sarkar helper.py:330:timed LOG: Stage test, elapsed time: 0:00:00.001262
+2025-03-08 19:30:26,767 [INFO] USER:ayushi_sarkar handlers.py:993:assemble LOG: Building artifacts, bundle: task07_250308.193025
+2025-03-08 19:30:26,769 [INFO] USER:ayushi_sarkar project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\EPAM_16\AWS\aws_syndicate\task07\jsrc\main\java\com\task07.
+2025-03-08 19:30:26,769 [INFO] USER:ayushi_sarkar project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\EPAM_16\AWS\aws_syndicate\task07\src\lambdas.
+2025-03-08 19:30:26,769 [INFO] USER:ayushi_sarkar project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\EPAM_16\AWS\aws_syndicate\task07\app\lambdas.
+2025-03-08 19:30:26,769 [INFO] USER:ayushi_sarkar project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\EPAM_16\AWS\aws_syndicate\task07\dnapp\lambdas.
+2025-03-08 19:30:26,769 [INFO] USER:ayushi_sarkar project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\EPAM_16\AWS\aws_syndicate\task07\swagger_src.
+2025-03-08 19:30:26,770 [INFO] USER:ayushi_sarkar project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\EPAM_16\AWS\aws_syndicate\task07\appsync_src.
+2025-03-08 19:30:26,770 [INFO] USER:ayushi_sarkar handlers.py:940:assemble_appsync LOG: Command assemble AppSync: project_path: appsync_src 
+2025-03-08 19:30:26,771 [INFO] USER:ayushi_sarkar appsync.py:42:assemble_appsync LOG: Appsync sources are located by path: C:/EPAM_16/AWS/aws_syndicate/task07/appsync_src
+2025-03-08 19:30:26,772 [INFO] USER:ayushi_sarkar appsync.py:47:assemble_appsync LOG: Going to process 'GraphQL_API'
+2025-03-08 19:30:26,772 [INFO] USER:ayushi_sarkar appsync.py:64:assemble_appsync LOG: Path to schema file resolved as 'C:/EPAM_16/AWS/aws_syndicate/task07/appsync_src/GraphQL_API/schema.graphql'
+2025-03-08 19:30:26,794 [INFO] USER:ayushi_sarkar appsync.py:115:assemble_appsync LOG: Appsync GraphQL_API was processed successfully
+2025-03-08 19:30:26,794 [INFO] USER:ayushi_sarkar handlers.py:944:assemble_appsync LOG: AppSync artifacts were prepared successfully.
+2025-03-08 19:30:26,795 [INFO] USER:ayushi_sarkar helper.py:330:timed LOG: Stage assemble_appsync, elapsed time: 0:00:00.024324
+2025-03-08 19:30:26,828 [INFO] USER:ayushi_sarkar helper.py:330:timed LOG: Stage assemble, elapsed time: 0:00:00.060646
+2025-03-08 19:30:26,858 [INFO] USER:ayushi_sarkar handlers.py:1037:package_meta LOG: Package meta, bundle: task07_250308.193025
+2025-03-08 19:30:26,859 [INFO] USER:ayushi_sarkar meta_processor.py:513:create_meta LOG: Bundle path: C:/EPAM_16/AWS/aws_syndicate/task07/bundles/task07_250308.193025
+2025-03-08 19:30:26,867 [INFO] USER:ayushi_sarkar helper.py:292:write_content_to_file LOG: C:\EPAM_16\AWS\aws_syndicate\task07\.syndicate-config-dev/bundles/task07_250308.193025\build_meta.json file was created.
+2025-03-08 19:30:26,867 [INFO] USER:ayushi_sarkar handlers.py:1040:package_meta LOG: Meta was configured successfully.
+2025-03-08 19:30:26,868 [INFO] USER:ayushi_sarkar helper.py:330:timed LOG: Stage package_meta, elapsed time: 0:00:00.009372
+2025-03-08 19:30:27,243 [INFO] USER:ayushi_sarkar handlers.py:1083:upload LOG: Upload bundle: task07_250308.193025
+2025-03-08 19:30:27,621 [INFO] USER:ayushi_sarkar bundle_processor.py:232:upload_bundle_to_s3 LOG: Bundle was validated successfully
+2025-03-08 19:30:28,759 [INFO] USER:ayushi_sarkar handlers.py:1090:upload LOG: Bundle was uploaded successfully
+2025-03-08 19:30:28,760 [INFO] USER:ayushi_sarkar helper.py:330:timed LOG: Stage upload, elapsed time: 0:00:01.862956
+2025-03-08 19:30:28,801 [INFO] USER:ayushi_sarkar helper.py:330:timed LOG: Stage build, elapsed time: 0:00:03.609641
+2025-03-08 19:30:32,883 [INFO] USER:ayushi_sarkar handlers.py:106:syndicate LOG: Configuration used: C:\EPAM_16\AWS\aws_syndicate\task07\.syndicate-config-dev
+2025-03-08 19:30:33,152 [INFO] USER:ayushi_sarkar processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-08 19:30:34,553 [INFO] USER:ayushi_sarkar project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-08 19:30:34,553 [INFO] USER:ayushi_sarkar project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-08 19:30:35,021 [INFO] USER:ayushi_sarkar sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-08 19:30:35,457 [INFO] USER:ayushi_sarkar project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-08 19:30:35,457 [INFO] USER:ayushi_sarkar project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-08 19:30:35,917 [INFO] USER:ayushi_sarkar sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-08 19:30:35,918 [INFO] USER:ayushi_sarkar helper.py:233:resolve_default_value LOG: Resolved value of deploy_name: task07
+2025-03-08 19:30:36,403 [INFO] USER:ayushi_sarkar project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-08 19:30:36,404 [INFO] USER:ayushi_sarkar project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-08 19:30:36,930 [INFO] USER:ayushi_sarkar sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-08 19:30:36,931 [INFO] USER:ayushi_sarkar helper.py:233:resolve_default_value LOG: Resolved value of bundle_name: task07_250308.193025
+2025-03-08 19:30:37,428 [INFO] USER:ayushi_sarkar project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-08 19:30:37,428 [INFO] USER:ayushi_sarkar project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-08 19:30:37,989 [INFO] USER:ayushi_sarkar sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-08 19:30:38,549 [INFO] USER:ayushi_sarkar project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-08 19:30:38,550 [INFO] USER:ayushi_sarkar project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-08 19:30:39,094 [INFO] USER:ayushi_sarkar sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-08 19:30:41,268 [INFO] USER:ayushi_sarkar deployment_processor.py:451:create_deployment_resources LOG: The latest deployment has status failed. Loaded output:
+ {
+    "arn:aws:iam::196241772369:policy/cmtr-78532faa-lambda-basic-execution": {
+        "resource_name": "cmtr-78532faa-lambda-basic-execution",
+        "resource_meta": {
+            "policy_content": {
+                "Statement": [
+                    {
+                        "Action": [
+                            "logs:CreateLogGroup",
+                            "logs:CreateLogStream",
+                            "logs:PutLogEvents",
+                            "dynamodb:GetItem",
+                            "dynamodb:Query",
+                            "dynamodb:PutItem",
+                            "dynamodb:Batch*",
+                            "dynamodb:DeleteItem",
+                            "ssm:PutParameter",
+                            "ssm:GetParameter",
+                            "kms:Decrypt"
+                        ],
+                        "Effect": "Allow",
+                        "Resource": "*"
+                    }
+                ],
+                "Version": "2012-10-17"
+            },
+            "resource_type": "iam_policy",
+            "tags": {
+                "run_id": "JAP-08",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "78532faa"
+            }
+        },
+        "description": {
+            "PolicyName": "cmtr-78532faa-lambda-basic-execution",
+            "PolicyId": "ANPAS3MHLZ5IRH5NRAF2A",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 4,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2025-03-01T18:30:53+00:00",
+            "UpdateDate": "2025-03-01T18:30:53+00:00",
+            "Tags": [
+                {
+                    "Key": "run_id",
+                    "Value": "JAP-08"
+                },
+                {
+                    "Key": "run_type",
+                    "Value": "stm"
+                },
+                {
+                    "Key": "type",
+                    "Value": "user"
+                },
+                {
+                    "Key": "user_id",
+                    "Value": "78532faa"
+                }
+            ]
+        }
+    },
+    "arn:aws:iam::196241772369:role/cmtr-78532faa-appsync_role": {
+        "resource_name": "cmtr-78532faa-appsync_role",
+        "resource_meta": {
+            "resource_type": "iam_role",
+            "principal_service": "appsync",
+            "predefined_policies": [],
+            "custom_policies": [
+                "cmtr-78532faa-lambda-basic-execution"
+            ],
+            "allowed_accounts": [],
+            "instance_profile": false,
+            "permissions_boundary": "arn:aws:iam::196241772369:policy/eo_role_boundary",
+            "tags": {
+                "run_id": "JAP-08",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "78532faa"
+            }
+        },
+        "description": {
+            "Path": "/",
+            "RoleName": "cmtr-78532faa-appsync_role",
+            "RoleId": "AROAS3MHLZ5IWCFHO5YIS",
+            "CreateDate": "2025-03-08T13:41:03+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "appsync.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600,
+            "PermissionsBoundary": {
+                "PermissionsBoundaryType": "Policy",
+                "PermissionsBoundaryArn": "arn:aws:iam::196241772369:policy/eo_role_boundary"
+            },
+            "Tags": [
+                {
+                    "Key": "run_id",
+                    "Value": "JAP-08"
+                },
+                {
+                    "Key": "run_type",
+                    "Value": "stm"
+                },
+                {
+                    "Key": "type",
+                    "Value": "user"
+                },
+                {
+                    "Key": "user_id",
+                    "Value": "78532faa"
+                }
+            ],
+            "RoleLastUsed": {}
+        }
+    },
+    "arn:aws:dynamodb:eu-central-1:196241772369:table/cmtr-78532faa-Events": {
+        "resource_name": "cmtr-78532faa-Events",
+        "resource_meta": {
+            "resource_type": "dynamodb_table",
+            "hash_key_name": "id",
+            "hash_key_type": "S",
+            "read_capacity": 1,
+            "write_capacity": 1,
+            "global_indexes": [],
+            "autoscaling": [],
+            "tags": {
+                "run_id": "JAP-08",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "78532faa"
+            },
+            "region": "eu-central-1",
+            "external": true
+        },
+        "description": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                }
+            ],
+            "TableName": "cmtr-78532faa-Events",
+            "KeySchema": [
+                {
+                    "AttributeName": "id",
+                    "KeyType": "HASH"
+                }
+            ],
+            "TableStatus": "ACTIVE",
+            "CreationDateTime": "2025-03-08T19:11:14.080000+05:30",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 1,
+                "WriteCapacityUnits": 1
+            },
+            "TableSizeBytes": 0,
+            "ItemCount": 0,
+            "TableId": "0240421d-f669-4531-aae9-d7209b0eb4ee"
+        }
+    },
+    "arn:aws:appsync:eu-central-1:196241772369:apis/vynj7c55ozd45d66h65kzgvenq": {
+        "resource_name": "cmtr-78532faa-GraphQL_API",
+        "resource_meta": {
+            "name": "cmtr-78532faa-GraphQL_API",
+            "resource_type": "appsync",
+            "primary_auth_type": "API_KEY",
+            "api_key_expiration_days": 7,
+            "schema_path": "schema.graphql",
+            "data_sources": [
+                {
+                    "name": "events_db",
+                    "type": "AMAZON_DYNAMODB",
+                    "service_role_name": "cmtr-78532faa-appsync_role",
+                    "dynamodb_config": {
+                        "table_name": "cmtr-78532faa-Events",
+                        "aws_region": "eu-central-1"
+                    }
+                }
+            ],
+            "resolvers": [
+                {
+                    "kind": "UNIT",
+                    "type_name": "Mutation",
+                    "field_name": "createEvent",
+                    "data_source_name": "events_db",
+                    "runtime": "JS",
+                    "code_path": "resolvers/mutation/createevent/code.js"
+                },
+                {
+                    "kind": "UNIT",
+                    "type_name": "Query",
+                    "field_name": "getEvent",
+                    "data_source_name": "events_db",
+                    "runtime": "JS",
+                    "code_path": "resolvers/query/getevent/code.js"
+                }
+            ],
+            "functions": [],
+            "log_config": {
+                "logging_enabled": true,
+                "field_log_level": "ERROR",
+                "cloud_watch_logs_role_name": "",
+                "exclude_verbose_content": false
+            },
+            "tags": {
+                "run_id": "JAP-08",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "78532faa"
+            },
+            "deployment_package": "appsync_GraphQL_API.zip",
+            "region": "eu-central-1"
+        },
+        "description": {
+            "apiId": "vynj7c55ozd45d66h65kzgvenq"
+        }
+    }
+}
+2025-03-08 19:30:41,471 [INFO] USER:ayushi_sarkar deployment_processor.py:466:create_deployment_resources LOG: Prefixes and suffixes of any resource names have been resolved
+2025-03-08 19:30:41,471 [INFO] USER:ayushi_sarkar deployment_processor.py:489:create_deployment_resources LOG: Going to deploy AWS resources
+2025-03-08 19:30:41,768 [INFO] USER:ayushi_sarkar deployment_processor.py:74:_process_resources LOG: Processing iam_policy resources
+2025-03-08 19:30:43,213 [WARNING] USER:ayushi_sarkar iam_resource.py:115:_create_policy_from_meta LOG: IAM policy cmtr-78532faa-lambda-basic-execution exists.
+2025-03-08 19:30:43,490 [INFO] USER:ayushi_sarkar deployment_processor.py:74:_process_resources LOG: Processing iam_role resources
+2025-03-08 19:30:43,765 [WARNING] USER:ayushi_sarkar iam_resource.py:141:_create_role_from_meta LOG: IAM role cmtr-78532faa-appsync_role exists.
+2025-03-08 19:30:43,768 [INFO] USER:ayushi_sarkar deployment_processor.py:74:_process_resources LOG: Processing dynamodb_table resources
+2025-03-08 19:30:44,850 [WARNING] USER:ayushi_sarkar dynamo_db_resource.py:240:_create_dynamodb_table_from_meta LOG: cmtr-78532faa-Events table exists.
+2025-03-08 19:30:44,852 [INFO] USER:ayushi_sarkar deployment_processor.py:88:_process_resources LOG: Processing appsync resources
+2025-03-08 19:30:45,978 [WARNING] USER:ayushi_sarkar appsync_connection.py:254:get_graphql_api_by_name LOG: AppSync API with the name "cmtr-78532faa-GraphQL_API" not found in the region eu-central-1
+2025-03-08 19:30:47,104 [INFO] USER:ayushi_sarkar appsync_resource.py:706:_extract_zip LOG: Downloading an artifact for Appsync 'cmtr-78532faa-GraphQL_API'
+2025-03-08 19:30:48,044 [ERROR] USER:ayushi_sarkar deployment_processor.py:387:process_response LOG: Caused by resource named cmtr-78532faa-GraphQL_API. An error occurred (AccessDeniedException) when calling the CreateGraphqlApi operation: User: arn:aws:sts::196241772369:assumed-role/cmtr_syndicate_student_programmatic_accessv2/78532faa is not authorized to perform: iam:PassRole on resource: arn:aws:iam::196241772369:role/vtl_logs
+2025-03-08 19:30:48,641 [WARNING] USER:ayushi_sarkar appsync_connection.py:254:get_graphql_api_by_name LOG: AppSync API with the name "cmtr-78532faa-GraphQL_API" not found in the region eu-central-1
+2025-03-08 19:30:49,559 [WARNING] USER:ayushi_sarkar bundle_processor.py:110:remove_failed_deploy_output LOG: Failed output file for deploy task07 does not exist
+2025-03-08 19:30:49,560 [INFO] USER:ayushi_sarkar deployment_processor.py:527:create_deployment_resources LOG: Going to apply post deployment tags
+2025-03-08 19:30:49,568 [INFO] USER:ayushi_sarkar group_tagging_api_resource.py:135:apply_tags LOG: Tags were successfully applied
+2025-03-08 19:30:49,568 [INFO] USER:ayushi_sarkar deployment_processor.py:530:create_deployment_resources LOG: Going to create deploy output
+2025-03-08 19:30:50,176 [INFO] USER:ayushi_sarkar bundle_processor.py:71:create_deploy_output LOG: Output file with name task07_250308.193025/outputs/task07_failed.json has been created
+2025-03-08 19:30:50,176 [INFO] USER:ayushi_sarkar deployment_processor.py:560:create_deployment_resources LOG: Deploy output for task07 was created.
+2025-03-08 19:30:50,176 [WARNING] USER:ayushi_sarkar handlers.py:344:deploy LOG: Backend resources were deployed with errors. See deploy output file.
+2025-03-08 19:30:50,177 [INFO] USER:ayushi_sarkar helper.py:330:timed LOG: Stage deploy, elapsed time: 0:00:11.082275
+2025-03-08 19:30:50,736 [INFO] USER:ayushi_sarkar project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-08 19:30:50,737 [INFO] USER:ayushi_sarkar project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-08 19:30:51,155 [INFO] USER:ayushi_sarkar sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-08 19:31:08,251 [INFO] USER:ayushi_sarkar handlers.py:106:syndicate LOG: Configuration used: C:\EPAM_16\AWS\aws_syndicate\task07\.syndicate-config-dev
+2025-03-08 19:31:08,508 [INFO] USER:ayushi_sarkar processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-08 19:31:10,192 [INFO] USER:ayushi_sarkar project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-08 19:31:10,192 [INFO] USER:ayushi_sarkar project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-08 19:31:10,851 [INFO] USER:ayushi_sarkar sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-08 19:31:12,405 [INFO] USER:ayushi_sarkar handlers.py:142:test LOG: Running tests...
+2025-03-08 19:31:12,405 [INFO] USER:ayushi_sarkar handlers.py:150:test LOG: Tests not found, 'tests' folder is missing in 'C:/EPAM_16/AWS/aws_syndicate/task07'.
+2025-03-08 19:31:12,406 [INFO] USER:ayushi_sarkar helper.py:330:timed LOG: Stage test, elapsed time: 0:00:00.001290
+2025-03-08 19:31:12,443 [INFO] USER:ayushi_sarkar handlers.py:993:assemble LOG: Building artifacts, bundle: task07_250308.193110
+2025-03-08 19:31:12,444 [INFO] USER:ayushi_sarkar project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\EPAM_16\AWS\aws_syndicate\task07\jsrc\main\java\com\task07.
+2025-03-08 19:31:12,444 [INFO] USER:ayushi_sarkar project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\EPAM_16\AWS\aws_syndicate\task07\src\lambdas.
+2025-03-08 19:31:12,444 [INFO] USER:ayushi_sarkar project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\EPAM_16\AWS\aws_syndicate\task07\app\lambdas.
+2025-03-08 19:31:12,444 [INFO] USER:ayushi_sarkar project_state.py:396:_update_lambdas_from_path LOG: Going to resolve any lambda names from a given path: C:\EPAM_16\AWS\aws_syndicate\task07\dnapp\lambdas.
+2025-03-08 19:31:12,444 [INFO] USER:ayushi_sarkar project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\EPAM_16\AWS\aws_syndicate\task07\swagger_src.
+2025-03-08 19:31:12,445 [INFO] USER:ayushi_sarkar project_state.py:430:_update_bpm_resources_from_path LOG: Going to resolve any build project mapping dependent resources from a given path: C:\EPAM_16\AWS\aws_syndicate\task07\appsync_src.
+2025-03-08 19:31:12,445 [INFO] USER:ayushi_sarkar handlers.py:940:assemble_appsync LOG: Command assemble AppSync: project_path: appsync_src 
+2025-03-08 19:31:12,465 [INFO] USER:ayushi_sarkar appsync.py:42:assemble_appsync LOG: Appsync sources are located by path: C:/EPAM_16/AWS/aws_syndicate/task07/appsync_src
+2025-03-08 19:31:12,465 [INFO] USER:ayushi_sarkar appsync.py:47:assemble_appsync LOG: Going to process 'GraphQL_API'
+2025-03-08 19:31:12,466 [INFO] USER:ayushi_sarkar appsync.py:64:assemble_appsync LOG: Path to schema file resolved as 'C:/EPAM_16/AWS/aws_syndicate/task07/appsync_src/GraphQL_API/schema.graphql'
+2025-03-08 19:31:12,473 [INFO] USER:ayushi_sarkar appsync.py:115:assemble_appsync LOG: Appsync GraphQL_API was processed successfully
+2025-03-08 19:31:12,473 [INFO] USER:ayushi_sarkar handlers.py:944:assemble_appsync LOG: AppSync artifacts were prepared successfully.
+2025-03-08 19:31:12,474 [INFO] USER:ayushi_sarkar helper.py:330:timed LOG: Stage assemble_appsync, elapsed time: 0:00:00.028600
+2025-03-08 19:31:12,507 [INFO] USER:ayushi_sarkar helper.py:330:timed LOG: Stage assemble, elapsed time: 0:00:00.063941
+2025-03-08 19:31:12,536 [INFO] USER:ayushi_sarkar handlers.py:1037:package_meta LOG: Package meta, bundle: task07_250308.193110
+2025-03-08 19:31:12,537 [INFO] USER:ayushi_sarkar meta_processor.py:513:create_meta LOG: Bundle path: C:/EPAM_16/AWS/aws_syndicate/task07/bundles/task07_250308.193110
+2025-03-08 19:31:12,544 [INFO] USER:ayushi_sarkar helper.py:292:write_content_to_file LOG: C:\EPAM_16\AWS\aws_syndicate\task07\.syndicate-config-dev/bundles/task07_250308.193110\build_meta.json file was created.
+2025-03-08 19:31:12,544 [INFO] USER:ayushi_sarkar handlers.py:1040:package_meta LOG: Meta was configured successfully.
+2025-03-08 19:31:12,545 [INFO] USER:ayushi_sarkar helper.py:330:timed LOG: Stage package_meta, elapsed time: 0:00:00.008426
+2025-03-08 19:31:12,751 [INFO] USER:ayushi_sarkar handlers.py:1083:upload LOG: Upload bundle: task07_250308.193110
+2025-03-08 19:31:13,119 [INFO] USER:ayushi_sarkar bundle_processor.py:232:upload_bundle_to_s3 LOG: Bundle was validated successfully
+2025-03-08 19:31:15,062 [INFO] USER:ayushi_sarkar handlers.py:1090:upload LOG: Bundle was uploaded successfully
+2025-03-08 19:31:15,062 [INFO] USER:ayushi_sarkar helper.py:330:timed LOG: Stage upload, elapsed time: 0:00:02.485024
+2025-03-08 19:31:15,134 [INFO] USER:ayushi_sarkar helper.py:330:timed LOG: Stage build, elapsed time: 0:00:04.282379
+2025-03-08 19:31:22,494 [INFO] USER:ayushi_sarkar handlers.py:106:syndicate LOG: Configuration used: C:\EPAM_16\AWS\aws_syndicate\task07\.syndicate-config-dev
+2025-03-08 19:31:22,803 [INFO] USER:ayushi_sarkar processor.py:143:_prepare_bucket_view LOG: Viewing complement, URIBucketView, has been found, setting up the raw data.
+2025-03-08 19:31:24,224 [INFO] USER:ayushi_sarkar project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-08 19:31:24,224 [INFO] USER:ayushi_sarkar project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-08 19:31:24,890 [INFO] USER:ayushi_sarkar sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-08 19:31:25,357 [INFO] USER:ayushi_sarkar project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-08 19:31:25,358 [INFO] USER:ayushi_sarkar project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-08 19:31:25,914 [INFO] USER:ayushi_sarkar sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-08 19:31:25,915 [INFO] USER:ayushi_sarkar helper.py:233:resolve_default_value LOG: Resolved value of deploy_name: task07
+2025-03-08 19:31:26,305 [INFO] USER:ayushi_sarkar project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-08 19:31:26,306 [INFO] USER:ayushi_sarkar project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-08 19:31:26,837 [INFO] USER:ayushi_sarkar sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-08 19:31:26,837 [INFO] USER:ayushi_sarkar helper.py:233:resolve_default_value LOG: Resolved value of bundle_name: task07_250308.193110
+2025-03-08 19:31:27,400 [INFO] USER:ayushi_sarkar project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-08 19:31:27,400 [INFO] USER:ayushi_sarkar project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-08 19:31:27,962 [INFO] USER:ayushi_sarkar sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-08 19:31:28,429 [INFO] USER:ayushi_sarkar project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-08 19:31:28,429 [INFO] USER:ayushi_sarkar project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-08 19:31:29,093 [INFO] USER:ayushi_sarkar sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
+2025-03-08 19:31:31,348 [INFO] USER:ayushi_sarkar deployment_processor.py:451:create_deployment_resources LOG: The latest deployment has status failed. Loaded output:
+ {
+    "arn:aws:iam::196241772369:policy/cmtr-78532faa-lambda-basic-execution": {
+        "resource_name": "cmtr-78532faa-lambda-basic-execution",
+        "resource_meta": {
+            "policy_content": {
+                "Statement": [
+                    {
+                        "Action": [
+                            "logs:CreateLogGroup",
+                            "logs:CreateLogStream",
+                            "logs:PutLogEvents",
+                            "dynamodb:GetItem",
+                            "dynamodb:Query",
+                            "dynamodb:PutItem",
+                            "dynamodb:Batch*",
+                            "dynamodb:DeleteItem",
+                            "ssm:PutParameter",
+                            "ssm:GetParameter",
+                            "kms:Decrypt"
+                        ],
+                        "Effect": "Allow",
+                        "Resource": "*"
+                    }
+                ],
+                "Version": "2012-10-17"
+            },
+            "resource_type": "iam_policy",
+            "tags": {
+                "run_id": "JAP-08",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "78532faa"
+            }
+        },
+        "description": {
+            "PolicyName": "cmtr-78532faa-lambda-basic-execution",
+            "PolicyId": "ANPAS3MHLZ5IRH5NRAF2A",
+            "Path": "/",
+            "DefaultVersionId": "v1",
+            "AttachmentCount": 4,
+            "PermissionsBoundaryUsageCount": 0,
+            "IsAttachable": true,
+            "CreateDate": "2025-03-01T18:30:53+00:00",
+            "UpdateDate": "2025-03-01T18:30:53+00:00",
+            "Tags": [
+                {
+                    "Key": "run_id",
+                    "Value": "JAP-08"
+                },
+                {
+                    "Key": "run_type",
+                    "Value": "stm"
+                },
+                {
+                    "Key": "type",
+                    "Value": "user"
+                },
+                {
+                    "Key": "user_id",
+                    "Value": "78532faa"
+                }
+            ]
+        }
+    },
+    "arn:aws:iam::196241772369:role/cmtr-78532faa-appsync_role": {
+        "resource_name": "cmtr-78532faa-appsync_role",
+        "resource_meta": {
+            "resource_type": "iam_role",
+            "principal_service": "appsync",
+            "predefined_policies": [],
+            "custom_policies": [
+                "cmtr-78532faa-lambda-basic-execution"
+            ],
+            "allowed_accounts": [],
+            "instance_profile": false,
+            "permissions_boundary": "arn:aws:iam::196241772369:policy/eo_role_boundary",
+            "tags": {
+                "run_id": "JAP-08",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "78532faa"
+            }
+        },
+        "description": {
+            "Path": "/",
+            "RoleName": "cmtr-78532faa-appsync_role",
+            "RoleId": "AROAS3MHLZ5IWCFHO5YIS",
+            "CreateDate": "2025-03-08T13:41:03+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "appsync.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600,
+            "PermissionsBoundary": {
+                "PermissionsBoundaryType": "Policy",
+                "PermissionsBoundaryArn": "arn:aws:iam::196241772369:policy/eo_role_boundary"
+            },
+            "Tags": [
+                {
+                    "Key": "run_id",
+                    "Value": "JAP-08"
+                },
+                {
+                    "Key": "run_type",
+                    "Value": "stm"
+                },
+                {
+                    "Key": "type",
+                    "Value": "user"
+                },
+                {
+                    "Key": "user_id",
+                    "Value": "78532faa"
+                }
+            ],
+            "RoleLastUsed": {}
+        }
+    },
+    "arn:aws:dynamodb:eu-central-1:196241772369:table/cmtr-78532faa-Events": {
+        "resource_name": "cmtr-78532faa-Events",
+        "resource_meta": {
+            "resource_type": "dynamodb_table",
+            "hash_key_name": "id",
+            "hash_key_type": "S",
+            "read_capacity": 1,
+            "write_capacity": 1,
+            "global_indexes": [],
+            "autoscaling": [],
+            "tags": {
+                "run_id": "JAP-08",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "78532faa"
+            },
+            "region": "eu-central-1",
+            "external": true
+        },
+        "description": {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                }
+            ],
+            "TableName": "cmtr-78532faa-Events",
+            "KeySchema": [
+                {
+                    "AttributeName": "id",
+                    "KeyType": "HASH"
+                }
+            ],
+            "TableStatus": "ACTIVE",
+            "CreationDateTime": "2025-03-08T19:11:14.080000+05:30",
+            "ProvisionedThroughput": {
+                "NumberOfDecreasesToday": 0,
+                "ReadCapacityUnits": 1,
+                "WriteCapacityUnits": 1
+            },
+            "TableSizeBytes": 0,
+            "ItemCount": 0,
+            "TableId": "0240421d-f669-4531-aae9-d7209b0eb4ee"
+        }
+    },
+    "arn:aws:appsync:eu-central-1:196241772369:apis/vynj7c55ozd45d66h65kzgvenq": {
+        "resource_name": "cmtr-78532faa-GraphQL_API",
+        "resource_meta": {
+            "name": "cmtr-78532faa-GraphQL_API",
+            "resource_type": "appsync",
+            "primary_auth_type": "API_KEY",
+            "api_key_expiration_days": 7,
+            "schema_path": "schema.graphql",
+            "data_sources": [
+                {
+                    "name": "events_db",
+                    "type": "AMAZON_DYNAMODB",
+                    "service_role_name": "cmtr-78532faa-appsync_role",
+                    "dynamodb_config": {
+                        "table_name": "cmtr-78532faa-Events",
+                        "aws_region": "eu-central-1"
+                    }
+                }
+            ],
+            "resolvers": [
+                {
+                    "kind": "UNIT",
+                    "type_name": "Mutation",
+                    "field_name": "createEvent",
+                    "data_source_name": "events_db",
+                    "runtime": "JS",
+                    "code_path": "resolvers/mutation/createevent/code.js"
+                },
+                {
+                    "kind": "UNIT",
+                    "type_name": "Query",
+                    "field_name": "getEvent",
+                    "data_source_name": "events_db",
+                    "runtime": "JS",
+                    "code_path": "resolvers/query/getevent/code.js"
+                }
+            ],
+            "functions": [],
+            "log_config": {
+                "logging_enabled": true,
+                "field_log_level": "ERROR",
+                "cloud_watch_logs_role_name": "",
+                "exclude_verbose_content": false
+            },
+            "tags": {
+                "run_id": "JAP-08",
+                "run_type": "stm",
+                "type": "user",
+                "user_id": "78532faa"
+            },
+            "deployment_package": "appsync_GraphQL_API.zip",
+            "region": "eu-central-1"
+        },
+        "description": {
+            "apiId": "vynj7c55ozd45d66h65kzgvenq"
+        }
+    }
+}
+2025-03-08 19:31:31,547 [INFO] USER:ayushi_sarkar deployment_processor.py:466:create_deployment_resources LOG: Prefixes and suffixes of any resource names have been resolved
+2025-03-08 19:31:31,548 [INFO] USER:ayushi_sarkar deployment_processor.py:489:create_deployment_resources LOG: Going to deploy AWS resources
+2025-03-08 19:31:31,839 [INFO] USER:ayushi_sarkar deployment_processor.py:74:_process_resources LOG: Processing iam_policy resources
+2025-03-08 19:31:33,499 [WARNING] USER:ayushi_sarkar iam_resource.py:115:_create_policy_from_meta LOG: IAM policy cmtr-78532faa-lambda-basic-execution exists.
+2025-03-08 19:31:33,800 [INFO] USER:ayushi_sarkar deployment_processor.py:74:_process_resources LOG: Processing iam_role resources
+2025-03-08 19:31:34,108 [WARNING] USER:ayushi_sarkar iam_resource.py:141:_create_role_from_meta LOG: IAM role cmtr-78532faa-appsync_role exists.
+2025-03-08 19:31:34,109 [INFO] USER:ayushi_sarkar deployment_processor.py:74:_process_resources LOG: Processing dynamodb_table resources
+2025-03-08 19:31:35,032 [WARNING] USER:ayushi_sarkar dynamo_db_resource.py:240:_create_dynamodb_table_from_meta LOG: cmtr-78532faa-Events table exists.
+2025-03-08 19:31:35,033 [INFO] USER:ayushi_sarkar deployment_processor.py:88:_process_resources LOG: Processing appsync resources
+2025-03-08 19:31:35,951 [WARNING] USER:ayushi_sarkar appsync_connection.py:254:get_graphql_api_by_name LOG: AppSync API with the name "cmtr-78532faa-GraphQL_API" not found in the region eu-central-1
+2025-03-08 19:31:36,872 [INFO] USER:ayushi_sarkar appsync_resource.py:706:_extract_zip LOG: Downloading an artifact for Appsync 'cmtr-78532faa-GraphQL_API'
+2025-03-08 19:31:41,683 [INFO] USER:ayushi_sarkar appsync_resource.py:162:_create_graphql_api_from_meta LOG: Schema of the AppSync 'cmtr-78532faa-GraphQL_API' created successfully
+2025-03-08 19:31:41,683 [INFO] USER:ayushi_sarkar appsync_resource.py:205:_build_data_source_params_from_meta LOG: Altering data source 'events_db'...
+2025-03-08 19:31:42,298 [INFO] USER:ayushi_sarkar appsync_resource.py:266:_build_resolver_params_from_meta LOG: Altering resolver for type 'Mutation' and field 'createEvent'...
+2025-03-08 19:31:42,913 [INFO] USER:ayushi_sarkar appsync_resource.py:266:_build_resolver_params_from_meta LOG: Altering resolver for type 'Query' and field 'getEvent'...
+2025-03-08 19:31:43,410 [INFO] USER:ayushi_sarkar appsync_resource.py:192:_create_graphql_api_from_meta LOG: Created AppSync GraphQL API 5jzv7wlvxrczrpjjqbeql2w6ui
+2025-03-08 19:31:44,652 [WARNING] USER:ayushi_sarkar bundle_processor.py:110:remove_failed_deploy_output LOG: Failed output file for deploy task07 does not exist
+2025-03-08 19:31:44,652 [INFO] USER:ayushi_sarkar deployment_processor.py:540:create_deployment_resources LOG: AWS resources were deployed successfully
+2025-03-08 19:31:44,653 [INFO] USER:ayushi_sarkar deployment_processor.py:543:create_deployment_resources LOG: Going to apply dynamic changes
+2025-03-08 19:31:44,653 [INFO] USER:ayushi_sarkar deployment_processor.py:545:create_deployment_resources LOG: Dynamic changes were applied successfully
+2025-03-08 19:31:44,653 [INFO] USER:ayushi_sarkar deployment_processor.py:547:create_deployment_resources LOG: Going to apply post deployment tags
+2025-03-08 19:31:44,661 [INFO] USER:ayushi_sarkar group_tagging_api_resource.py:135:apply_tags LOG: Tags were successfully applied
+2025-03-08 19:31:44,661 [INFO] USER:ayushi_sarkar deployment_processor.py:550:create_deployment_resources LOG: Going to create deploy output
+2025-03-08 19:31:45,268 [INFO] USER:ayushi_sarkar bundle_processor.py:71:create_deploy_output LOG: Output file with name task07_250308.193110/outputs/task07.json has been created
+2025-03-08 19:31:45,268 [INFO] USER:ayushi_sarkar deployment_processor.py:560:create_deployment_resources LOG: Deploy output for task07 was created.
+2025-03-08 19:31:45,269 [INFO] USER:ayushi_sarkar handlers.py:347:deploy LOG: Backend resources were deployed.
+2025-03-08 19:31:45,269 [INFO] USER:ayushi_sarkar helper.py:330:timed LOG: Stage deploy, elapsed time: 0:00:16.175218
+2025-03-08 19:31:46,032 [INFO] USER:ayushi_sarkar project_state.py:122:get_remote LOG: Unsafely loaded project state file from S3 bucket. The retrieved object has type: dict
+2025-03-08 19:31:46,032 [INFO] USER:ayushi_sarkar project_state.py:127:get_remote LOG: Made ProjectState object from the dict loaded from S3 bucket
+2025-03-08 19:31:46,515 [INFO] USER:ayushi_sarkar sync_processor.py:53:sync_project_state LOG: Project state file has been successfully synced
