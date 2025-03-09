@@ -45,26 +45,17 @@
     "tags": {},
     "expression": "rate(1 minute)"
   },
-  "Events": {
-    "resource_type": "dynamodb_table",
-    "hash_key_name": "id",
-    "hash_key_type": "S",
-    "read_capacity": 1,
-    "write_capacity": 1,
-    "global_indexes": [],
-    "autoscaling": [],
-    "tags": {}
-  },
-  "appsync_role": {
-    "resource_type": "iam_role",
-    "principal_service": "appsync",
-    "predefined_policies": [],
-    "custom_policies": [
-      "lambda-basic-execution"
-    ],
-    "allowed_accounts": [],
-    "instance_profile": false,
-    "permissions_boundary": "",
+  "${target_bucket}":{
+    "resource_type": "s3_bucket",
+    "acl": "private",
+    "cors": [],
+    "policy": {},
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
     "tags": {}
   }
 }
